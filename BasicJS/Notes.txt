@@ -1,0 +1,28 @@
+#JAVASCRIPT EXECUTION CONTEXT
+
+```
+let a=10;
+function multiply(x){
+    return x*10;
+}
+let b=multiply(a);
+
+console.log(b);
+
+```
+
+CREATION PHASE-----------------------------EXECUTION PHASE
+ 1. in creation phase --
+ a. create Global or window object
+ b it setups a memory heap for storing variable and function references.
+ c.it initializes those variable declaration and functions with undefined.
+
+         a=undefined, multiply(){body}, b=undefined
+ 
+2.Execution phase
+ - js executes the code line by line.
+ - assigning the values to variables and executes the function call.
+ - also for every new function created javascript engine create a new 
+ execution context all together.
+ 
+

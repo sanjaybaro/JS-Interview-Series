@@ -1,0 +1,24 @@
+#Debouncing and Throttling:
+
+- Debouncing:
+delay for 400 ms,
+-it limits the execution of a function call,
+and waits for a certain amount of time before
+running it again.in this case it is 400 ms.
+
+
+eg:flipkart search box.
+typing gap greater than 400ms < then API call.
+
+
+
+-Throttling
+eg: Throttling action in scrolling web page.
+api call in a specific time period again and again, 
+not every time.it will execute function in each 
+certain period of time.
+
+-Throttling is a technique to limit the execution of an event 
+handler function even when this event trigger continuously
+due to user action.user action here is scrolling.
+
