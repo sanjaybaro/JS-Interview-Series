@@ -95,8 +95,18 @@ eg: console.log(count); //undefined
 
  TDZ-is the time between the declaration and initialization 
  of let and const variable.
+ TDZ - is the term to describe the sate where variables are
+ in the scope but they are not yet declared.
  eg:ReferenceError: Cannot access 'myVar' before initialization
  */
 /*--------------------------------------------------------------*/
+// 6.Interview question Imp
 
+function abc() {
+  console.log(a, b, c);
 
+  const c = 30;
+  let b = 20;
+  var a = 10;
+}
+abc();
