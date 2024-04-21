@@ -20,5 +20,5 @@ certain period of time.
 
 -Throttling is a technique to limit the execution of an event 
 handler function even when this event trigger continuously
-due to user action.user action here is scrolling.
+due to user action. user action here is scrolling.
 
