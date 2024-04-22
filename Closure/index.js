@@ -185,8 +185,8 @@ for (var i = 0; i < 3; i++) {
     console.log(i);
   }, 1000);
 }
-*/
 
+//print 0,1,2,3 by using var.(dry run this properly)
 for (var i = 0; i < 3; i++) {
   function inner(i) {
     setTimeout(function log() {
@@ -195,3 +195,124 @@ for (var i = 0; i < 3; i++) {
   }
   inner(i);
 }
+
+*/
+/***************************************************************** */
+//Q. how would you use a closure to create a private counter?
+
+/*
+function counter() {
+  var _counter = 0;
+
+  function add(increment) {
+    _counter += increment;
+  }
+  function retrive() {
+    return "Counter = " + _counter;
+  }
+  return {
+    add,
+    retrive,
+  };
+}
+
+const c = counter();
+c.add(5);
+c.add(10);
+console.log(c.retrive());
+*/
+/********************************************************************* */
+
+//Q. what is module pattern?
+
+/*
+var Module = (function () {
+  function privateMethod() {
+    //do something
+    console.log("private");
+  }
+  return {
+    publicMethod: function () {
+      //can call privateMethod()
+      console.log("public");
+    },
+  };
+})();
+
+Module.publicMethod();
+Module.privateMethod();
+//Module Pattern Adv JS
+*/
+/******************************************************************** */
+//Q. Make this run only once.
+
+/*
+let view;
+function likeTheVideo() {
+  let called = 0;
+  return function () {
+    if (called > 0) {
+      console.log("Already Subscribe");
+    } else {
+      view = "Sanjay Coder";
+      console.log("Subscribe to", view);
+      called++;
+    }
+  };
+}
+
+let isSubscribed = likeTheVideo();
+isSubscribed();
+isSubscribed();
+isSubscribed();
+*/
+/******************************************************************** */
+//Q. once Polyfill implementation.
+//do later.
+
+/********************************************************************* */
+
+//Q. Memoize Polyfill.
+//do later.
+//Q Implement Caching/Memoize Function.
+
+/********************************************************************* */
+//Q. Difference between Closure and Scope.
+/*
+whenever you create a function within another function then the inner
+function is the closure.
+this closure usually return so you can use the outer function variable
+at the latter time.
+whereas a scope in javaScript defines what variable you have acess to
+-global scope
+-local scope
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
